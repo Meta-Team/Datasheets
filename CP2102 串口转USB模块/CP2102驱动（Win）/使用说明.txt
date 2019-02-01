@@ -1,0 +1,2 @@
+32位系统请安装CP210xVCPInstaller_x86.exe
+64位系统请安在CP210xVCPInstaller_x64.exe
