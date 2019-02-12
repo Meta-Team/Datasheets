@@ -1,0 +1,203 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:RmAssistant.lang"
+                    xmlns:s="clr-namespace:System;assembly=mscorlib"
+                    >
+	<s:String x:Key="upgrade">Update </s:String>
+	<s:String x:Key="degrade">Downgrade</s:String>
+	<s:String x:Key="refresh">Refresh</s:String>
+	<s:String x:Key="firmwaresList">Firmware List</s:String>
+	<s:String x:Key="version">Version</s:String>
+	<s:String x:Key="upgradeTime"> Update Time</s:String>
+	<s:String x:Key="currentVersion"> Current Version</s:String>
+	<s:String x:Key="new">New</s:String>
+	<s:String x:Key="resetToDefaultSetting">Reset to Default Setting</s:String>
+	<s:String x:Key="operation">Operation</s:String>
+	<s:String x:Key="simplifiedChinese">Simplified Chinese</s:String>
+	<s:String x:Key="japanese">Japanese </s:String>
+	<s:String x:Key="english"> English </s:String>
+	<s:String x:Key="login">Login</s:String>
+	<s:String x:Key="signup">Register</s:String>
+	<s:String x:Key="password">Password</s:String>
+	<s:String x:Key="emailAccount">Email Address</s:String>
+	<s:String x:Key="forgetPassword">Forgot Password</s:String>
+    <s:String x:Key="state">State</s:String>
+
+    <s:String x:Key="escId">ESC ID</s:String>
+	<!--electronic speed control id-->
+	<s:String x:Key="escCode">ESC Code</s:String>
+	<s:String x:Key="userRpmLimitation">Max RPM in PWM Mode</s:String>
+	<s:String x:Key="slP"> Speed Closed-loop P in PWM Mode</s:String>
+	<s:String x:Key="slI"> Speed Closed-loop I in PWM Mode </s:String>
+	<s:String x:Key="EEPROMMode">EEPROM Mode</s:String>
+	<s:String x:Key="PWMMode">PWM Mode</s:String>
+	
+	<s:String x:Key="escTemperatureProtection">ESC Temperature Protection</s:String>
+	<s:String x:Key="motorTemperatureProtection">Motor Temperature Protection</s:String>
+	<s:String x:Key="spinDirection">Spin Direction in PWM Mode</s:String>
+	<s:String x:Key="clockwise">Clockwise</s:String>
+	<s:String x:Key="counterClockwise">Counterclockwise</s:String>
+	<s:String x:Key="escTemperatureProtectionMode"> ESC Temperature Protection Mode</s:String>
+	<s:String x:Key="motorTemperatureProtectionMode">Motor Temperature Protection Mode</s:String>
+    <s:String x:Key="srFrequency">Data FeedBack Frequency </s:String>
+	<s:String x:Key="3510ESC">3510 ESC</s:String>
+	<s:String x:Key="open"> Open </s:String>
+	<s:String x:Key="close">Close</s:String>
+	<s:String x:Key="resetToDefaultValue">Restore Defaults</s:String>
+
+	<s:String x:Key="savingSuccessful">Data Saved Successfully</s:String>
+    <s:String x:Key="savingFailed">Data Failed to Saved</s:String>
+    <s:String x:Key="savingIn">Data Is Saving</s:String>
+
+    <s:String x:Key="parameterSetting"> Settings</s:String>
+	<s:String x:Key="controlMode">Control Mode</s:String>
+	<s:String x:Key="cl"> Current</s:String>
+	<s:String x:Key="sl"> Speed Closed-loop </s:String>
+	<s:String x:Key="speedValue">Speed Reference Value </s:String>
+	<s:String x:Key="currentValue"> Current Value</s:String>
+	<s:String x:Key="others">Others</s:String>
+
+	<s:String x:Key="bbVol">Busbar Voltage</s:String>
+	<s:String x:Key="escCurrent">ESC Current</s:String>
+	<s:String x:Key="rpm"> RPM</s:String>
+	<s:String x:Key="escTemperature">ESC Temperature</s:String>
+	<s:String x:Key="motorTemperature"> Motor Temperature </s:String>
+	<s:String x:Key="errorCode">Error Code</s:String>
+
+
+	<s:String x:Key="outputTemperatureLimitation"> Voltage Output Limit </s:String>
+	<s:String x:Key="outputCurrentLimitation"> Current Output Limit </s:String>
+	<s:String x:Key="outputRpmLimitation">Output RPM Limit</s:String>
+    <s:String x:Key="oneway">One-way Mode</s:String>
+    <s:String x:Key="twoway">Normal-Reverse Mode</s:String>
+
+    <!-- Homepage Prompt -->
+	<s:String x:Key="SeriapTickInLogoPage">Please keep your device connected. </s:String>
+	
+	<!-- Serial Port Abnormal Page-->
+	<s:String x:Key="SerialTickInAbnormalPage">Connection timed out. Please check the connection between your device and computer. </s:String>
+	<s:String x:Key="BackToHomeInAbnormalPage">Back to Homepage </s:String>
+			
+	<!-- Major Function Name-->
+	<s:String x:Key="MainCheck"> Check Status </s:String>
+	<s:String x:Key="MainUpdate">Firmware Update </s:String>
+	<s:String x:Key="MainSet">Parameter Setting </s:String> 
+
+	<!-- Tab Function Name -->
+	
+	<s:String x:Key="TabMap">Map</s:String>
+	<s:String x:Key="TabAdvance">Advanced</s:String>
+	<s:String x:Key="TabBase">Basic</s:String>
+	<s:String x:Key="TabDataExc">Data Interaction</s:String>
+	
+	<!--UWB Check Page-->
+	<s:String x:Key="BtnCheck">Check</s:String>
+	<s:String x:Key="ListVTime">Time</s:String>
+	<s:String x:Key="ListVMouleType">Module Type</s:String>
+	<s:String x:Key="ListVMouleID">Module ID</s:String>
+	<s:String x:Key="ListVLoadder">Loadder Version</s:String>
+	<s:String x:Key="ListVApp">App Version</s:String>
+	<s:String x:Key="ListVCPUID">CPU ID</s:String>
+	
+	<!--UWB Settings Page-->
+	<s:String x:Key="GroupBoxMapSet">Map Settings</s:String>
+	<s:String x:Key="GroupBoxRealTimeTrail"> Real-time Track</s:String>
+	<s:String x:Key="LabRealLength"> Length (cm)</s:String>
+	<s:String x:Key="LabRealWidth"> Width (cm)</s:String>
+    <s:String x:Key="BtnAddMap">Loading Map</s:String>
+    <s:String x:Key="BtnClearMap">Clearing Map</s:String>
+    <s:String x:Key="BtnSet">Settings</s:String>
+	<s:String x:Key="CheckboxRealPosition"> Real-time Position</s:String>
+	<s:String x:Key="CheckboxTrail">Trail</s:String>
+	<s:String x:Key="CheckboxLabPosition">Position Label</s:String>
+	<s:String x:Key="CheckboxAngel">Angle</s:String>
+	<s:String x:Key="BtnClearTrail">Clear Track</s:String>
+	<s:String x:Key="BtnStartStore">Start Recording</s:String>
+	<s:String x:Key="BtnReopenTrail">Replay Track</s:String>
+
+    <s:String x:Key="LabUwbTag0Add">UWB Tag[0] Plugged In</s:String>
+    <s:String x:Key="LabUwbTag1Add">UWB Tag[1] Plugged In</s:String>
+    <s:String x:Key="LabUwbTag2Add">UWB Tag[2] Plugged In</s:String>
+    <s:String x:Key="LabUwbTag3Add">UWB Tag[3] Plugged In</s:String>
+    <s:String x:Key="LabUwbTag4Add">UWB Tag[4] Plugged In</s:String>
+    <s:String x:Key="LabUwbTag5Add">UWB Tag[5] Plugged In</s:String>
+
+    <s:String x:Key="LabUwbBst0Add">UWB Anchor[0] Plugged In</s:String>
+    <s:String x:Key="LabUwbBst1Add">UWB Anchor[1] Plugged In</s:String>
+    <s:String x:Key="LabUwbBst2Add">UWB Anchor[2] Plugged In</s:String>
+    <s:String x:Key="LabUwbBst3Add">UWB Anchor[3] Plugged In</s:String>
+    <s:String x:Key="LabUwbBst4Add">UWB Anchor[4] Plugged In</s:String>
+    <s:String x:Key="LabUwbBst5Add">UWB Anchor[5] Plugged In</s:String>
+    
+    <s:String x:Key="posFailed">Positioning Failed</s:String>
+	<s:String x:Key="posRisky">Positioning Unstable </s:String>
+	<s:String x:Key="posStable">Positioning Stable</s:String>
+	<s:String x:Key="calibratePos">Compass Needs Calibration </s:String>
+	<s:String x:Key="selfCheckingFailed">Self-check Failed </s:String>
+
+    <s:String x:Key="getBs0Success">Get Anchor[0] Successful</s:String>
+    <s:String x:Key="getBs1Success">Get Anchor[1] Successful</s:String>
+    <s:String x:Key="getBs2Success">Get Anchor[2] Successful</s:String>
+    <s:String x:Key="getBs3Success">Get Anchor[3] Successful</s:String>
+    <s:String x:Key="getBs4Success">Get Anchor[4] Successful</s:String>
+    <s:String x:Key="getBs5Success">Get Anchor[5] Successful</s:String>
+
+    <s:String x:Key="getBsFail">Get Anchor Failed</s:String>
+    <s:String x:Key="getBs0Fail">Get Anchor[0] Failed</s:String>
+    <s:String x:Key="getBs1Fail">Get Anchor[1] Failed</s:String>
+    <s:String x:Key="getBs2Fail">Get Anchor[2] Failed</s:String>
+    <s:String x:Key="getBs3Fail">Get Anchor[3] Failed</s:String>
+    <s:String x:Key="getBs4Fail">Get Anchor[4] Failed</s:String>
+    <s:String x:Key="getBs5Fail">Get Anchor[5] Failed</s:String>
+
+    <s:String x:Key="setBs0PosSuccess">Anchor[0] Coordinate Set Successfully</s:String>
+    <s:String x:Key="setBs1PosSuccess">Anchor[1] Coordinate Set Successfully</s:String>
+    <s:String x:Key="setBs2PosSuccess">Anchor[2] Coordinate Set Successfully</s:String>
+    <s:String x:Key="setBs3PosSuccess">Anchor[3] Coordinate Set Successfully</s:String>
+    <s:String x:Key="setBs4PosSuccess">Anchor[4] Coordinate Set Successfully</s:String>
+    <s:String x:Key="setBs5PosSuccess">Anchor[5] Coordinate Set Successfully</s:String>
+
+    <s:String x:Key="setBs0PosFail">Anchor[0] Coordinate Set Failed</s:String>
+    <s:String x:Key="setBs1PosFail">Anchor[1] Coordinate Set Failed</s:String>
+    <s:String x:Key="setBs2PosFail">Anchor[2] Coordinate Set Failed</s:String>
+    <s:String x:Key="setBs3PosFail">Anchor[3] Coordinate Set Failed</s:String>
+    <s:String x:Key="setBs4PosFail">Anchor[4] Coordinate Set Failed</s:String>
+    <s:String x:Key="setBs5PosFail">Anchor[5] Coordinate Set Failed</s:String>
+    
+    <s:String x:Key="setWmModeSuccess">Work Pattern Set Successfully</s:String>
+	<s:String x:Key="setWmModeFail">Work Pattern Setting Failed</s:String>
+	<s:String x:Key="recieveCalibrationAck">Start Calibration</s:String>
+	<s:String x:Key="CalibrationSuccess">Calibration Successful</s:String>
+	<s:String x:Key="CalibrationFail">Calibration Failed</s:String>
+	<s:String x:Key="xOutOfRange">X Out of Range:[-32768,32768]</s:String>
+	<s:String x:Key="yOutOfRange">Y Out of Range:[-32768,32768]</s:String>	
+	<s:String x:Key="zOutOfRange">Z Out of Range:[-32768,32768]</s:String>
+	<s:String x:Key="setProportionSuccess">Map Proportion Set Successfully </s:String>
+	<s:String x:Key="setPropertionFail"> Map Proportion Set Failed</s:String>
+	<s:String x:Key="endRecording">Stop Recording</s:String>
+	<s:String x:Key="startRecording"> Start Recording </s:String>
+	<s:String x:Key="bsCoordinate">Anchor Coordinates</s:String>
+	<s:String x:Key="wm">Work Pattern</s:String>
+	<s:String x:Key="posX">X (cm)</s:String>
+    <s:String x:Key="posY">Y (cm)</s:String>
+    <s:String x:Key="posZ">Z (cm)</s:String>
+    <s:String x:Key="obtain">Obtain</s:String>
+	<s:String x:Key="BtnSetBst">Start Calibration</s:String>
+	<s:String x:Key="label">Tag</s:String>
+	<s:String x:Key="bs">Anchor</s:String>
+	<s:String x:Key="ec">Compass</s:String>
+	<s:String x:Key="type">Type</s:String>
+
+    <s:String x:Key="tipInfo">Message</s:String>
+    <s:String x:Key="netabnormal">Network Abnormal !</s:String>
+
+    <!--UWB Widget Name-->
+	<s:String x:Key="checkID">Search ID</s:String>
+    <s:String x:Key="updateSuccess">Update Successed</s:String>
+    <s:String x:Key="updateFail">Update Failed</s:String>
+    <s:String x:Key="toNest">The device has been upgraded to the latest version</s:String>
+    <s:String x:Key="btnconfirm">Confirm</s:String>
+    <s:String x:Key="updating">Upgrading to</s:String>
+    <s:String x:Key="currentProgress">Current upgrade progress</s:String>
+    
+</ResourceDictionary>
