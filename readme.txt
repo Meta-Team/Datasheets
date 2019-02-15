@@ -17,8 +17,8 @@
 │   │   ├── x86
 │   │   ├── 使用说明.txt
 │   │   └── 其他版本驱动下载地址.txt
-│   ├── 串口调试软件
-│   └── 串口模块使用说明.pdf
+│   ├── 串口模块使用说明.pdf
+│   └── 串口调试软件
 ├── DT7-DR16 遥控器控制协议V1.4.pdf
 ├── HC05 蓝牙模块
 │   ├── BlueTooth.pdf
@@ -29,6 +29,12 @@
 ├── Meta Team C++ Style Guide.pdf
 ├── RM 6623 云台电机电调.pdf
 ├── RM C610 无刷电机 电调 拨弹电机.pdf
+├── RM 历史规则
+│   ├── RM2018机甲大师赛比赛规则手册 V1.2.pdf
+│   ├── RoboMaster2017场地说明V2.0修订版.pdf
+│   ├── RoboMaster2017比赛规则手册V1.9.pdf
+│   ├── RoboMaster2018机甲大师国际预选赛参赛手册.pdf
+│   └── RoboMaster2018机甲大师赛裁判系统规范手册V1.1.pdf
 ├── RM 开发板
 │   ├── RM2017开发板 用户手册.pdf
 │   ├── RM2017开发板 硬件原理图.pdf
@@ -44,12 +50,6 @@
 │   ├── RoboMaster 开发板线材包物品清单.pdf
 │   ├── RoboMaster开发板焊接修改.pdf
 │   └── RoboMaster开发版用户手册.pdf
-├── RM 历史规则
-│   ├── RM2018机甲大师赛比赛规则手册 V1.2.pdf
-│   ├── RoboMaster2017场地说明V2.0修订版.pdf
-│   ├── RoboMaster2017比赛规则手册V1.9.pdf
-│   ├── RoboMaster2018机甲大师国际预选赛参赛手册.pdf
-│   └── RoboMaster2018机甲大师赛裁判系统规范手册V1.1.pdf
 ├── RM 裁判系统
 │   ├── RM2017_裁判系统软件合集
 │   │   ├── DJI_WIN_Driver_Installer.7z
@@ -59,24 +59,24 @@
 │   │   └── 文件说明.txt
 │   ├── RM2017裁判系统用户手册V2.0.pdf
 │   ├── RM2018 机甲大师裁判系统规范手册V1.4（2018.4.17）.pdf
-│   ├── RM2019裁判系统规范手册V1.1.pdf
-│   ├── RM2019裁判系统用户手册V1.0.pdf
 │   ├── RM2019裁判系统模块说明书
-│   │   ├── RM2019裁判系统装甲模块AM02及AM12说明书V1.0.pdf
-│   │   ├── RM2019裁判系统灯条模块LI01说明书V1.0.pdf
 │   │   ├── RM2019裁判系统主控模块MC02说明书V1.0.pdf
-│   │   ├── RM2019裁判系统测速模块SM01及SM11说明书V1.0.pdf
 │   │   ├── RM2019裁判系统场地交互模块FI01说明书V1.0.pdf
+│   │   ├── RM2019裁判系统测速模块SM01及SM11说明书V1.0.pdf
+│   │   ├── RM2019裁判系统灯条模块LI01说明书V1.0.pdf
 │   │   ├── RM2019裁判系统电源管理模块PM01说明书V1.0.pdf
-│   │   └── RM2019裁判系统相机图传模块VT01说明书V1.0.pdf
+│   │   ├── RM2019裁判系统相机图传模块VT01说明书V1.0.pdf
+│   │   └── RM2019裁判系统装甲模块AM02及AM12说明书V1.0.pdf
+│   ├── RM2019裁判系统用户手册V1.0.pdf
+│   ├── RM2019裁判系统规范手册V1.1.pdf
 │   └── RoboMaster定位系统使用说明
 │       ├── RoboMaster 基站模块使用说明 发布版.pdf
 │       ├── RoboMaster 标签模块使用说明-发布版.pdf
 │       └── Robomaster UWB 定位系统使用说明 （发布版V1.0）.pdf
-├── RM2019 项管管理方案V2.0.pdf
+├── RM2019 参赛队伍招商权益审核模板.xlsx
 ├── RM2019 参赛队招商手册.pdf
 ├── RM2019 视觉元素工具手册-基础版v1.1.pdf
-├── RM2019 参赛队伍招商权益审核模板.xlsx
+├── RM2019 项管管理方案V2.0.pdf
 ├── RM35 电机 工程升降机构.jpg
 ├── RoboMaster 2019机甲大师赛比赛规则手册FAQV1.0（技术评审规范）.pdf
 ├── RoboMaster 2019机甲大师赛比赛规则手册V1.1.pdf
@@ -94,10 +94,10 @@
 │   │   ├── 10x和30x驱动器 最新固件升级包
 │   │   ├── 20x驱动器 最新固件升级包
 │   │   ├── 40x驱动器 最新固件升级包
+│   │   ├── 字体安装包，如显示异常请安装
 │   │   ├── 最新_NET框架安装包，必须提前安装
 │   │   │   └── 说明.txt
-│   │   ├── 驱动器调试软件
-│   │   └── 字体安装包，如显示异常请安装
+│   │   └── 驱动器调试软件
 │   ├── 10-RoboModule-RMDS系列驱动器-CAN总线连线示意图.pdf
 │   ├── 108-RoboModule-RMDS系列驱动器-接口硬件参考for RMDS-108.pdf
 │   ├── 11-RoboModule-RMDS系列驱动器-CAN总线通信协议说明.pdf
@@ -111,6 +111,7 @@
 │       │   └── Objects
 │       └── User
 ├── ST-Link V2.pdf
+├── STLink Driver.zip
 ├── gdb.pdf
 ├── generate_readme.sh
 ├── openocd.pdf
@@ -130,7 +131,7 @@
     │       └── language
     └── RoboMaster-820R电调固件发布
         ├── 升级工具
-        ├── 版本说明.txt
-        └── 安全使用说明.docx
+        ├── 安全使用说明.docx
+        └── 版本说明.txt
 
-41 directories, 92 files
+41 directories, 93 files
