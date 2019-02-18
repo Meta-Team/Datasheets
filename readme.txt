@@ -29,6 +29,7 @@
 ├── Meta Team C++ Style Guide.pdf
 ├── RM 6623 云台电机电调.pdf
 ├── RM C610 无刷电机 电调 拨弹电机.pdf
+├── RM M2006 P36直流无刷减速电机使用说明 发布版.pdf
 ├── RM 历史规则
 │   ├── RM2018机甲大师赛比赛规则手册 V1.2.pdf
 │   ├── RoboMaster2017场地说明V2.0修订版.pdf
@@ -134,4 +135,4 @@
         ├── 安全使用说明.docx
         └── 版本说明.txt
 
-41 directories, 93 files
+41 directories, 94 files
