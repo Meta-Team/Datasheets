@@ -1,4 +1,16 @@
 .
+├── ! RM 2019 规则与规范
+│   ├── RM2019 参赛队伍招商权益审核模板.xlsx
+│   ├── RM2019 参赛队招商手册.pdf
+│   ├── RM2019 视觉元素工具手册-基础版v1.1.pdf
+│   ├── RM2019 项管管理方案V2.0.pdf
+│   ├── RoboMaster 2019机甲大师赛比赛规则手册V1.1.pdf
+│   └── 旧版规则
+│       ├── RM2018机甲大师赛比赛规则手册 V1.2.pdf
+│       ├── RoboMaster2017场地说明V2.0修订版.pdf
+│       ├── RoboMaster2017比赛规则手册V1.9.pdf
+│       ├── RoboMaster2018机甲大师国际预选赛参赛手册.pdf
+│       └── RoboMaster2018机甲大师赛裁判系统规范手册V1.1.pdf
 ├── 2312 摩擦轮电机.pdf
 ├── A4988 步进电机 电调.pdf
 ├── ALIENTAK 正点原子 STM32 学习板
@@ -19,23 +31,38 @@
 │   │   └── 其他版本驱动下载地址.txt
 │   ├── 串口模块使用说明.pdf
 │   └── 串口调试软件
-├── DT7-DR16 遥控器控制协议V1.4.pdf
 ├── HC05 蓝牙模块
 │   ├── BlueTooth.pdf
 │   └── HC05指令集.pdf
-├── M3508直流无刷减速电机保养手册.pdf
 ├── MPU-6500-Datasheet.pdf
 ├── MPU-6500-Register-Map.pdf
 ├── Meta Team C++ Style Guide.pdf
 ├── RM 6623 云台电机电调.pdf
 ├── RM C610 无刷电机 电调 拨弹电机.pdf
+├── RM C620无刷电机调速器使用说明V1.01.pdf
+├── RM DT7-DR16 遥控器控制协议V1.4.pdf
 ├── RM M2006 P36直流无刷减速电机使用说明 发布版.pdf
-├── RM 历史规则
-│   ├── RM2018机甲大师赛比赛规则手册 V1.2.pdf
-│   ├── RoboMaster2017场地说明V2.0修订版.pdf
-│   ├── RoboMaster2017比赛规则手册V1.9.pdf
-│   ├── RoboMaster2018机甲大师国际预选赛参赛手册.pdf
-│   └── RoboMaster2018机甲大师赛裁判系统规范手册V1.1.pdf
+├── RM M3508 直流无刷减速电机及附件包
+│   ├── M3508直流无刷减速电机保养手册.pdf
+│   ├── RoboMaster M3508直流无刷减速电机使用说明V1.0（中英日）.pdf
+│   ├── RoboMaster M3508直流无刷减速电机混控教程V1.0.pdf
+│   └── RoboMaster M3508附件包使用说明V1.0（中英日）.pdf
+├── RM 固件升级
+│   ├── RM6623_V2 电调固件升级
+│   │   ├── RM6623_V2固件说明.txt
+│   │   └── RM6623固件升级步骤.docx
+│   ├── RoboMaster Assistant 7.8
+│   │   ├── CrashReport
+│   │   └── lang
+│   ├── RoboMaster Tools
+│   │   ├── Logs
+│   │   └── config
+│   │       ├── firmware
+│   │       └── language
+│   └── RoboMaster-820R电调固件发布
+│       ├── 升级工具
+│       ├── 安全使用说明.docx
+│       └── 版本说明.txt
 ├── RM 开发板
 │   ├── RM2017开发板 用户手册.pdf
 │   ├── RM2017开发板 硬件原理图.pdf
@@ -74,13 +101,7 @@
 │       ├── RoboMaster 基站模块使用说明 发布版.pdf
 │       ├── RoboMaster 标签模块使用说明-发布版.pdf
 │       └── Robomaster UWB 定位系统使用说明 （发布版V1.0）.pdf
-├── RM2019 参赛队伍招商权益审核模板.xlsx
-├── RM2019 参赛队招商手册.pdf
-├── RM2019 视觉元素工具手册-基础版v1.1.pdf
-├── RM2019 项管管理方案V2.0.pdf
 ├── RM35 电机 工程升降机构.jpg
-├── RoboMaster 2019机甲大师赛比赛规则手册FAQV1.0（技术评审规范）.pdf
-├── RoboMaster 2019机甲大师赛比赛规则手册V1.1.pdf
 ├── RoboModule RMDS 108 RM35驱动模块
 │   ├── 01-RoboModule-RMDS系列驱动器-如何安装FT232的串口驱动.pdf
 │   ├── 01-RoboModule-RMDS系列驱动器-调试前的准备.pdf
@@ -117,22 +138,6 @@
 ├── generate_readme.sh
 ├── openocd.pdf
 ├── readme.txt
-├── stm32f427vg.pdf
-└── 固件升级
-    ├── RM6623_V2 电调固件升级
-    │   ├── RM6623_V2固件说明.txt
-    │   └── RM6623固件升级步骤.docx
-    ├── RoboMaster Assistant 7.8
-    │   ├── CrashReport
-    │   └── lang
-    ├── RoboMaster Tools
-    │   ├── Logs
-    │   └── config
-    │       ├── firmware
-    │       └── language
-    └── RoboMaster-820R电调固件发布
-        ├── 升级工具
-        ├── 安全使用说明.docx
-        └── 版本说明.txt
+└── stm32f427vg.pdf
 
-41 directories, 94 files
+43 directories, 97 files
