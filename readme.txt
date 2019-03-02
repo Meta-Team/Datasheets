@@ -16,7 +16,6 @@
 ├── ALIENTAK 正点原子 STM32 学习板
 │   ├── Cortex-M4 Devices Generic User Guide.pdf
 │   ├── Explorer STM32F4_V2.2_SCH.pdf
-│   ├── STM32F4xx中文参考手册.pdf
 │   ├── STM32F4开发指南-库函数版本_V1.1.pdf
 │   ├── STM32入门简易教程.pdf
 │   └── STM32入门篇之通用定时器彻底研究.doc
@@ -36,7 +35,6 @@
 │   └── HC05指令集.pdf
 ├── MPU-6500-Datasheet.pdf
 ├── MPU-6500-Register-Map.pdf
-├── Meta Team C++ Style Guide.pdf
 ├── RM 6623 云台电机电调.pdf
 ├── RM C610 无刷电机 电调 拨弹电机.pdf
 ├── RM C620无刷电机调速器使用说明V1.01.pdf
@@ -135,10 +133,13 @@
 │       └── User
 ├── ST-Link V2.pdf
 ├── STLink Driver.zip
+├── STM32F4
+│   ├── STM32F4xx Reference Manual.pdf
+│   ├── STM32F4xx中文参考手册.pdf
+│   └── stm32f427vg.pdf
 ├── gdb.pdf
 ├── generate_readme.sh
 ├── openocd.pdf
-├── readme.txt
-└── stm32f427vg.pdf
+└── readme.txt
 
-43 directories, 98 files
+44 directories, 98 files
