@@ -1,0 +1,9 @@
+1.DJI_WIN_Driver_Installer 是图传接收机修改信道的驱动；
+2.RoboMastersClient 是比赛客户端软件；
+3.RoboMastersServer 是比赛服务器软件；
+4.RoboMastersTools 是升级裁判系统的升级软件和修改图传接收机信道的软件合集；
+
+5.注意：
+    1.使用比赛系统需要先设置好IP地址；
+    2.软件的使用请参考2017年的裁判系统手册；
+    3.软件更新请关注论坛；
