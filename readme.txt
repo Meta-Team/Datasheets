@@ -21,6 +21,7 @@
 │   │   └── 其他版本驱动下载地址.txt
 │   ├── 串口模块使用说明.pdf
 │   └── 串口调试软件
+├── GM3510 直流无刷电机使用说明书.pdf
 ├── HC05 蓝牙模块
 │   ├── BlueTooth.pdf
 │   └── HC05指令集.pdf
@@ -58,6 +59,7 @@
 │       └── RoboMaster2018机甲大师赛裁判系统规范手册V1.1.pdf
 ├── RM 6623 云台电机电调.pdf
 ├── RM DT7-DR16 遥控器控制协议V1.4.pdf
+├── RM GM6020 使用说明书.pdf
 ├── RM 固件升级
 │   ├── RM6623_V2 电调固件升级
 │   │   ├── RM6623_V2固件说明.txt
@@ -151,4 +153,4 @@
     ├── gdb.pdf
     └── openocd.pdf
 
-52 directories, 99 files
+52 directories, 101 files
