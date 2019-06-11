@@ -1,15 +1,15 @@
 .
 ├── 2312 摩擦轮电机.pdf
 ├── A4988 步进电机 电调.pdf
-├── C610+M3508及附件包
+├── C610+M2006
+│   ├── RM C610 无刷电机 电调.pdf
+│   └── RM M2006 P36直流无刷减速电机使用说明 发布版.pdf
+├── C620+M3508及附件包
 │   ├── M3508直流无刷减速电机保养手册.pdf
-│   ├── RM C610 无刷电机 电调 拨弹电机.pdf
+│   ├── RM C620无刷电机调速器使用说明V1.01.pdf
 │   ├── RoboMaster M3508直流无刷减速电机使用说明V1.0（中英日）.pdf
 │   ├── RoboMaster M3508直流无刷减速电机混控教程V1.0.pdf
 │   └── RoboMaster M3508附件包使用说明V1.0（中英日）.pdf
-├── C620+M2006
-│   ├── RM C620无刷电机调速器使用说明V1.01.pdf
-│   └── RM M2006 P36直流无刷减速电机使用说明 发布版.pdf
 ├── CP2102 串口转USB模块
 │   ├── CP2102驱动（Mac）.dmg
 │   ├── CP2102驱动（Win）
@@ -25,7 +25,8 @@
 ├── HC05 蓝牙模块
 │   ├── BlueTooth.pdf
 │   └── HC05指令集.pdf
-├── MPU6500
+├── MPU6500+IST8310
+│   ├── IST8303 Datasheet.pdf
 │   ├── MPU-6500-Datasheet.pdf
 │   └── MPU-6500-Register-Map.pdf
 ├── RM 2017 开发板
@@ -45,12 +46,12 @@
 │   ├── RoboMaster开发板焊接修改.pdf
 │   └── RoboMaster开发版用户手册.pdf
 ├── RM 2019 规则与规范
-│   ├── RM 2019 单项赛规则手册.pdf
 │   ├── RM2019 参赛队伍招商权益审核模板.xlsx
 │   ├── RM2019 参赛队招商手册.pdf
 │   ├── RM2019 视觉元素工具手册-基础版v1.1.pdf
 │   ├── RM2019 项管管理方案V2.0.pdf
-│   ├── RoboMaster 2019机甲大师赛比赛规则手册V1.1.pdf
+│   ├── RoboMaster 2019单项赛比赛规则手册V1.1 2019.04.19.pdf
+│   ├── RoboMaster 2019机甲大师赛比赛规则手册V1.2 2019.04.19.pdf
 │   └── 旧版规则
 │       ├── RM2018机甲大师赛比赛规则手册 V1.2.pdf
 │       ├── RoboMaster2017场地说明V2.0修订版.pdf
@@ -79,7 +80,7 @@
 ├── RM 裁判系统
 │   ├── 2017版
 │   │   ├── DJI_WIN_Driver_Installer.7z
-│   │   ├── RM2017裁判系统用户手册V2.0.pdf
+│   │   ├── RoboMaster 2017 裁判系统用户手册 V2.1.pdf
 │   │   ├── RoboMasters_Tools
 │   │   │   ├── Logs
 │   │   │   └── config
@@ -91,7 +92,8 @@
 │   │   └── 文件说明.txt
 │   ├── 2018版
 │   │   └── RM2018 机甲大师裁判系统规范手册V1.4（2018.4.17）.pdf
-│   ├── RM2019裁判系统串口协议V1.0.pdf
+│   ├── 2019裁判系统FAQ_v1.3.pdf
+│   ├── RM2019裁判系统串口协议 V1.1.pdf
 │   ├── RM2019裁判系统主控模块MC02说明书V1.0.pdf
 │   ├── RM2019裁判系统场地交互模块FI01说明书V1.0.pdf
 │   ├── RM2019裁判系统测速模块SM01及SM11说明书V1.0.pdf
@@ -147,10 +149,11 @@
 │   └── stm32f427vg.pdf
 ├── generate_readme.sh
 ├── readme.txt
+├── 好盈电调.JPG
 └── 工具链
     ├── ST-Link V2.pdf
     ├── STLink Driver.zip
     ├── gdb.pdf
     └── openocd.pdf
 
-52 directories, 101 files
+52 directories, 104 files
