@@ -46,6 +46,7 @@
 ├── RM 2018 开发板
 │   ├── B型板
 │   │   ├── RoboMaster 开发板B型 位号图.pdf
+│   │   ├── RoboMaster 开发板B型 原理图.pdf
 │   │   └── RoboMaster 开发板B型使用说明.pdf
 │   ├── OLED
 │   │   ├── RoboMaster OLED 原理图.pdf
@@ -53,7 +54,6 @@
 │   ├── RoboMaster 开发板A型 位号图.pdf
 │   ├── RoboMaster 开发板A型 原理图.pdf
 │   ├── RoboMaster 开发板A型使用说明.pdf
-│   ├── RoboMaster 开发板B型 原理图.pdf
 │   ├── RoboMaster 开发板线材包物品清单.pdf
 │   ├── RoboMaster开发板焊接修改.pdf
 │   └── RoboMaster开发版用户手册.pdf
@@ -68,6 +68,8 @@
 │   ├── RoboMaster 2019机甲大师国际预选赛参赛手册V1.0.pdf
 │   ├── RoboMaster 2019机甲大师赛比赛规则手册 V2.0 20190621.pdf
 │   ├── RoboMaster2019机甲大师赛比赛规则手册V2.0修订声明（20190703）.pdf
+│   ├── 充能装置使用说明&FAQ.pdf
+│   ├── 关于 RoboMaster 2019 机甲大师复活赛、 国际预选赛、总决赛及单项赛总决赛弹丸使用说明.pdf
 │   └── 旧版规则
 │       ├── RM2018机甲大师赛比赛规则手册 V1.2.pdf
 │       ├── RoboMaster 2019机甲大师赛比赛规则手册V1.2 2019.04.19.pdf
@@ -90,9 +92,8 @@
 │   │   └── 文件说明.txt
 │   ├── 2018版
 │   │   └── RM2018 机甲大师裁判系统规范手册V1.4（2018.4.17）.pdf
-│   ├── 2019裁判系统FAQ_v1.3.pdf
+│   ├── 2019裁判系统FAQ_v1.4.pdf
 │   ├── RM2019AM02及AM12说明书V1.0.pdf
-│   ├── RM2019串口协议 V1.1.pdf
 │   ├── RM2019主控模块MC02说明书V1.0.pdf
 │   ├── RM2019场地交互模块FI01说明书V1.0.pdf
 │   ├── RM2019测速模块SM01及SM11说明书V1.0.pdf
@@ -123,10 +124,13 @@
 │   │   ├── RJCP.SerialPortStream.pdb
 │   │   ├── RoboMaster Tool 2.exe.config
 │   │   └── RoboMaster Tool 2.pdb
-│   └── RoboMaster定位系统使用说明
-│       ├── RoboMaster 基站模块使用说明 发布版.pdf
-│       ├── RoboMaster 标签模块使用说明-发布版.pdf
-│       └── Robomaster UWB 定位系统使用说明 （发布版V1.0）.pdf
+│   ├── RoboMaster定位系统使用说明
+│   │   ├── RoboMaster 基站模块使用说明 发布版.pdf
+│   │   ├── RoboMaster 标签模块使用说明-发布版.pdf
+│   │   └── Robomaster UWB 定位系统使用说明 （发布版V1.0）.pdf
+│   ├── 更新历史
+│   │   └── RM2019串口协议 V1.1.pdf
+│   └── 裁判系统串口协议附录 V2.0.pdf
 ├── RM6623
 │   ├── RM 6623 云台电机电调.pdf
 │   ├── RM6623_V2 电调固件升级
@@ -188,4 +192,4 @@
 │   └── 好盈电调.JPG
 └── 超级电容.JPG
 
-55 directories, 133 files
+56 directories, 136 files
