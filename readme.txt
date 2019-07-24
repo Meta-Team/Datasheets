@@ -105,6 +105,8 @@
 │   ├── RM2019裁判系统用户手册V1.0.pdf
 │   ├── RM2019规范手册V1.1.pdf
 │   ├── RM模拟器使用指南.pdf
+│   ├── RoboMaster 2019 客户端（总决赛版本）界面说明.pdf
+│   ├── RoboMaster 2019 裁判系统服务器(总决赛版本)界面说明V1.0.pdf
 │   ├── RoboMaster Tool 2 V5.0.0.3
 │   │   ├── Config
 │   │   │   ├── RobotModuleConfig.csv
@@ -194,4 +196,4 @@
 │   └── 好盈电调.JPG
 └── 法拉电容恒功率控制板使用说明.pdf
 
-56 directories, 138 files
+56 directories, 140 files
