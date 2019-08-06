@@ -94,7 +94,7 @@
 │   │   └── 文件说明.txt
 │   ├── 2018版
 │   │   └── RM2018 机甲大师裁判系统规范手册V1.4（2018.4.17）.pdf
-│   ├── 2019裁判系统FAQ_v1.4.pdf
+│   ├── 2019裁判系统FAQ_v1.6.pdf
 │   ├── RM2019AM02及AM12说明书V1.0.pdf
 │   ├── RM2019主控模块MC02说明书V1.0.pdf
 │   ├── RM2019场地交互模块FI01说明书V1.0.pdf
@@ -128,6 +128,7 @@
 │   │   ├── RJCP.SerialPortStream.pdb
 │   │   ├── RoboMaster Tool 2.exe.config
 │   │   └── RoboMaster Tool 2.pdb
+│   ├── RoboMaster 图传模块 VT02&12 2019使用说明书.pdf
 │   ├── RoboMaster定位系统使用说明
 │   │   ├── RoboMaster 基站模块使用说明 发布版.pdf
 │   │   ├── RoboMaster 标签模块使用说明-发布版.pdf
@@ -196,4 +197,4 @@
 │   └── 好盈电调.JPG
 └── 法拉电容恒功率控制板使用说明.pdf
 
-56 directories, 140 files
+56 directories, 141 files
