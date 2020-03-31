@@ -1,0 +1,18 @@
+--cpu Cortex-M3
+"..\output\core_cm3.o"
+"..\output\system_stm32f10x.o"
+"..\output\startup_stm32f10x_md.o"
+"..\output\stm32f10x_rcc.o"
+"..\output\stm32f10x_gpio.o"
+"..\output\stm32f10x_usart.o"
+"..\output\misc.o"
+"..\output\delay.o"
+"..\output\led.o"
+"..\output\stm32f10x_it.o"
+"..\output\iic.o"
+"..\output\usart.o"
+"..\output\main.o"
+--strict --scatter "..\Output\GYXX_IIC.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "..\Listing\GYXX_IIC.map" -o ..\Output\GYXX_IIC.axf

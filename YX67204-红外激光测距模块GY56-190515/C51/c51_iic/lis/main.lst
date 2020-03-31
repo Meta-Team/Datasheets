@@ -1,0 +1,62 @@
+C51 COMPILER V8.02   MAIN                                                                  12/06/2017 10:10:14 PAGE 1   
+
+
+C51 COMPILER V8.02, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN ..\output\main.obj
+COMPILER INVOKED BY: D:\Program Files (x86)\Keil\C51\BIN\C51.EXE main.c BROWSE INCDIR(..\PERIPHERALS\INC\) DEBUG OBJECTE
+                    -XTEND PRINT(..\lis\main.lst) OBJECT(..\output\main.obj)
+
+line level    source
+
+   1          #include <reg52.h>
+   2          #include "usart.h"
+   3          #include "iic.h"  
+   4          /*
+   5          硬件接法：
+   6          GY-US42V1----C51
+   7          SCL---P3^6
+   8          SDA---P3^7
+   9          C51---FT232
+  10          TX ---RX
+  11          RX ---TX
+  12          软件说明：
+  13          
+  14          注：
+  15                  中断函数位于stc_it.c
+  16          联系方式：
+  17          http://shop62474960.taobao.com/?spm=a230r.7195193.1997079397.2.9qa3Ky&v=1
+  18          */
+  19          
+  20          void delay(unsigned int x)
+  21          {
+  22   1              while(x--);
+  23   1      }
+  24          int main(void)
+  25          {
+  26   1      
+  27   1              Usart_Int(9600);
+  28   1              while(1)
+  29   1              {
+  30   2                      uint16_t diatance=0;
+  31   2                  requestRange((0xe1),&diatance);              //读取距离数据
+  32   2                      takeRangeReading(0xe0);                          //发送测量命令
+  33   2      
+  34   2                      send_out(&diatance,1,0x45);              //发向上位机
+*** WARNING C182 IN LINE 34 OF MAIN.C: pointer to different objects
+  35   2                      delay(60000);   
+  36   2              }
+  37   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     65    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----       2
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  1 WARNING(S),  0 ERROR(S)

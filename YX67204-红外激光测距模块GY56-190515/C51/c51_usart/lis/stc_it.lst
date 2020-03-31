@@ -1,0 +1,73 @@
+C51 COMPILER V8.02   STC_IT                                                                12/05/2017 16:41:30 PAGE 1   
+
+
+C51 COMPILER V8.02, COMPILATION OF MODULE STC_IT
+OBJECT MODULE PLACED IN ..\output\stc_it.obj
+COMPILER INVOKED BY: D:\Program Files (x86)\Keil\C51\BIN\C51.EXE ..\Peripherals\src\stc_it.c BROWSE INCDIR(..\Peripheral
+                    -s\inc\) DEBUG OBJECTEXTEND PRINT(..\lis\stc_it.lst) OBJECT(..\output\stc_it.obj)
+
+line level    source
+
+   1          #include "stc_it.h"
+   2          #include "usart.h"
+   3          #include "string.h"
+   4          //外部中断1
+   5          uint8_t stata=0;
+   6          void EXTI1_IRQHandler(void)interrupt 2
+   7          {
+   8   1      }
+   9          //串口中断
+  10          void USART_IRQHandler(void)interrupt 4
+  11          {
+  12   1              static uint8_t i=0,rebuf[9]={0};
+  13   1              uint8_t sum=0;
+  14   1          if(TI)//发送完成标志
+  15   1              {
+  16   2                TI=0;//清发送完成标志
+  17   2                send_ok=0;//缓存标志置0 
+  18   2              }
+  19   1              if(RI)//接收完成标志
+  20   1              {
+  21   2                      rebuf[i++]=SBUF;
+  22   2                      RI=0;//清中断接收标志
+  23   2                      if (rebuf[0]!=0x5a)//帧头不对
+  24   2                              i=0;    
+  25   2                      if ((i==2)&&(rebuf[1]!=0x5a))//帧头不对
+  26   2                              i=0;
+  27   2              
+  28   2                      if(i>3)//i等于4时，已经接收到数据量字节rebuf[3]
+  29   2                      {
+  30   3                              if(i!=(rebuf[3]+5))//判断是否接收一帧数据完毕
+  31   3                                      return; 
+  32   3                              switch(rebuf[2])//接收完毕后处理
+  33   3                              {
+  34   4                                      case 0x15:
+  35   4                                              if(!Receive_ok)//当数据处理完成后才接收新的数据
+  36   4                                              {
+  37   5                                                      memcpy(re_Buf_Data,rebuf,9);//拷贝接收到的数据
+  38   5                                                      Receive_ok=1;//接收完成标志
+  39   5                                              }
+  40   4                                              break;
+  41   4                              }
+  42   3                              i=0;//缓存清0
+  43   3                      }
+  44   2              
+  45   2              }
+  46   1      
+  47   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    162    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+C51 COMPILER V8.02   STC_IT                                                                12/05/2017 16:41:30 PAGE 2   
+
+   DATA SIZE        =     11       1
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

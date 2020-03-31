@@ -1,0 +1,26 @@
+<html>
+<body>
+<pre>
+<h1>µVision3 Build Log</h1>
+<h2>Project:</h2>
+G:\keil\gy\gy53_3_test\×ÊÁÏ\C51\c51_iic\user\c51_iic.uv2
+Project File Date:  04/01/2016
+
+<h2>Output:</h2>
+Build target 'c51_iic'
+compiling usart.c...
+compiling stc_it.c...
+compiling iic.c...
+..\PERIPHERALS\SRC\IIC.C(2): warning C280: 'x': unreferenced local variable
+compiling main.c...
+MAIN.C(34): warning C182: pointer to different objects
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_SEND_3OUT?USART
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_SINGLE_WRITEI2C_BYTE?IIC
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_SINGLE_READI2C?IIC
+Program Size: data=65.0 xdata=0 code=1976
+creating hex file from "..\output\c51_iic"...
+"..\output\c51_iic" - 0 Error(s), 5 Warning(s).

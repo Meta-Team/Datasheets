@@ -1,0 +1,90 @@
+C51 COMPILER V8.02   USART                                                                 12/06/2017 10:10:14 PAGE 1   
+
+
+C51 COMPILER V8.02, COMPILATION OF MODULE USART
+OBJECT MODULE PLACED IN ..\output\usart.obj
+COMPILER INVOKED BY: D:\Program Files (x86)\Keil\C51\BIN\C51.EXE ..\Peripherals\src\usart.c BROWSE INCDIR(..\PERIPHERALS
+                    -\INC\) DEBUG OBJECTEXTEND PRINT(..\lis\usart.lst) OBJECT(..\output\usart.obj)
+
+line level    source
+
+   1          #include "usart.h"
+   2          #include "string.h"
+   3          
+   4          void Usart_Int(uint32_t BaudRatePrescaler)
+   5          {
+   6   1               SCON  = 0x50;//1位起始位，8位数据位，1位停止位，异步，使能接收
+   7   1               TMOD |= 0x20;//定时器1，工作方式2，8位自动重装计数值
+   8   1              //例9600，28800/9600=3,TH1=253=FD；
+   9   1           TH1   =256-(28800/BaudRatePrescaler); 
+  10   1               TL1   =256-(28800/BaudRatePrescaler);
+  11   1           TCON |=0x40;//启动定时器1
+  12   1               IE   |=0x90;//打开串口中断，MCU总中断
+  13   1      }
+  14          //发送一个字节
+  15          uint8_t send_ok=0,Calibration=0;
+  16          void USART_send_byte(uint8_t Tx_data)
+  17          {
+  18   1              while(send_ok);//等待发送缓存为空
+  19   1              SBUF = Tx_data;
+  20   1              send_ok=1;//缓存标志置1
+  21   1      }
+  22          //发送Length-1个数据+1个数据累加和
+  23          void USART_Send(uint8_t *Buffer, uint8_t Length)
+  24          {
+  25   1              uint8_t i=0;
+  26   1              while(i<Length)
+  27   1              {
+  28   2                      if(i<(Length-1))
+  29   2                      Buffer[Length-1]+=Buffer[i];
+  30   2                      USART_send_byte(Buffer[i++]);
+  31   2              }
+  32   1      }
+  33          void send_3out(uint8_t *Data,uint8_t length,uint8_t send)
+  34          {
+  35   1              uint8_t TX_DATA[13]={0},i=0,k=0;
+  36   1              TX_DATA[i++]=0X5A;//帧头
+  37   1              TX_DATA[i++]=0X5A;//帧头
+  38   1              TX_DATA[i++]=send;//功能字节
+  39   1              TX_DATA[i++]=length;//数据个数
+  40   1              for(k=0;k<length;k++)//存入数据到缓存TX_DATA
+  41   1              {
+  42   2                      TX_DATA[i++]=(uint8_t)Data[k];
+  43   2              }
+  44   1              USART_Send(TX_DATA,length+5);   
+  45   1      }
+  46          //发送一帧数据
+  47          void send_out(int16_t *Data,uint8_t length,uint8_t send)
+  48          {
+  49   1              uint8_t TX_DATA[13],i=0,k=0;
+  50   1              memset(TX_DATA,0,(2*length+5));//清空发送数据
+  51   1              TX_DATA[i++]=0X5A;//帧头
+  52   1              TX_DATA[i++]=0X5A;//帧头
+  53   1              TX_DATA[i++]=send;//功能字节
+  54   1              TX_DATA[i++]=2*length;//数据个数
+C51 COMPILER V8.02   USART                                                                 12/06/2017 10:10:14 PAGE 2   
+
+  55   1              for(k=0;k<length;k++)//存入数据到缓存TX_DATA数组
+  56   1              {
+  57   2                      TX_DATA[i++]=(uint16_t)Data[k]>>8;
+  58   2                      TX_DATA[i++]=(uint16_t)Data[k];
+  59   2              }
+  60   1              USART_Send(TX_DATA,(2*length+5));//发送一帧数据 
+  61   1      }
+  62          
+  63          
+  64          
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    409    ----
+   CONSTANT SIZE    =     13    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      2      45
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

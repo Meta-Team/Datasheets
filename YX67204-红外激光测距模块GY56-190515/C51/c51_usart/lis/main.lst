@@ -1,0 +1,88 @@
+C51 COMPILER V8.02   MAIN                                                                  12/05/2017 16:41:30 PAGE 1   
+
+
+C51 COMPILER V8.02, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN ..\output\main.obj
+COMPILER INVOKED BY: D:\Program Files (x86)\Keil\C51\BIN\C51.EXE main.c BROWSE INCDIR(..\Peripherals\inc\) DEBUG OBJECTE
+                    -XTEND PRINT(..\lis\main.lst) OBJECT(..\output\main.obj)
+
+line level    source
+
+   1          #include <reg52.h>
+   2          #include "usart.h"
+   3          #include "iic.h"  
+   4          /*
+   5          硬件接法：
+   6          GY-56---c51
+   7          1、GY-56_RX---c51_TX,c51复位将发送A5 65 01 0B 给模块
+   8          2、c51_TX---FT232,STM32将数据上传给上位机
+   9          3、GY-56_TX---c51_RX，接收模块数据
+  10          软件说明:
+  11          该程序采用串口方式获取模块数据，波特率9600
+  12          
+  13          注：中断函数位于stc_it.c
+  14          联系方式：
+  15          http://shop62474960.taobao.com/?spm=a230r.7195193.1997079397.2.9qa3Ky&v=1
+  16          */
+  17          typedef  struct
+  18          {
+  19                  uint16_t distance;
+  20                  uint8_t   mode;
+  21                  uint8_t   temp;
+  22          }sensor;
+  23          void send_com(u8 function,u8 valve)
+  24          {
+  25   1              u8 bytes[3]={0};
+  26   1              bytes[0]=0xa5;
+  27   1              bytes[1]=function;//功能字节
+  28   1          bytes[2]=valve;      //指令值
+  29   1              USART_Send(bytes,4);//发送帧头、功能字节、校验和
+  30   1      }
+  31          void delay(uint16_t x)
+  32          {
+  33   1          while(x--) ;
+  34   1      
+  35   1      }
+  36          int main(void)
+  37          {
+  38   1      
+  39   1          u8 sum=0,i=0;
+  40   1      
+  41   1              sensor GY56;
+  42   1              Usart_Int(9600);
+  43   1              delay(1000);
+  44   1              send_com(0x65,1);//发送读方位角指令
+  45   1              while(1)
+  46   1              {
+  47   2                      if(Receive_ok)//串口接收完毕
+  48   2                      {
+  49   3                              for(sum=0,i=0;i<(re_Buf_Data[3]+4);i++)//rgb_data[3]=3
+  50   3                              sum+=re_Buf_Data[i];
+  51   3                              if(sum==re_Buf_Data[i])//校验和判断
+  52   3                              {
+  53   4                                      GY56.distance=re_Buf_Data[4]<<8|re_Buf_Data[5];
+  54   4                                      GY56.mode=re_Buf_Data[6];
+C51 COMPILER V8.02   MAIN                                                                  12/05/2017 16:41:30 PAGE 2   
+
+  55   4                                      GY56.temp=re_Buf_Data[7];
+  56   4      
+  57   4                                      send_3out(&re_Buf_Data[4],4,0x15);//上传给上位机
+  58   4                              }
+  59   3                              Receive_ok=0;//处理数据完毕标志
+  60   3                      }       
+  61   2              }
+  62   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    169    ----
+   CONSTANT SIZE    =      3    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----      11
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

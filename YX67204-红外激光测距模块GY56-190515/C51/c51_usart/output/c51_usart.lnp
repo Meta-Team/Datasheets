@@ -1,0 +1,5 @@
+"..\output\main.obj",
+"..\output\stc_it.obj",
+"..\output\usart.obj" 
+TO "..\output\c51_usart" 
+PRINT("..\lis\c51_usart.m51") RAMSIZE(256) 

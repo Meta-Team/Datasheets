@@ -1,0 +1,253 @@
+C51 COMPILER V8.02   IIC                                                                   12/06/2017 10:10:14 PAGE 1   
+
+
+C51 COMPILER V8.02, COMPILATION OF MODULE IIC
+OBJECT MODULE PLACED IN ..\output\iic.obj
+COMPILER INVOKED BY: D:\Program Files (x86)\Keil\C51\BIN\C51.EXE ..\Peripherals\src\iic.c BROWSE INCDIR(..\PERIPHERALS\I
+                    -NC\) DEBUG OBJECTEXTEND PRINT(..\lis\iic.lst) OBJECT(..\output\iic.obj)
+
+line level    source
+
+   1          #include "iic.h"
+   2          void delay_1us(u8 x)//粗略延时
+   3          {
+   4   1         //   while(x--);
+   5   1      }
+*** WARNING C280 IN LINE 2 OF ..\PERIPHERALS\SRC\IIC.C: 'x': unreferenced local variable
+   6          /////////////////////////////
+   7          ////////IIC起始函数//////////
+   8          /*
+   9          IIC起始:当SCL处于高电平期间，SDA由高电平变成低电平出现一个下降沿，然后SCL拉低
+  10          */
+  11          u8 I2C_Start(void)
+  12          {
+  13   1                      SDA=1; 
+  14   1                      delay_1us(1);   //延时保证时钟频率，以便从机识别
+  15   1                      SCL=1;
+  16   1                      delay_1us(1);//延时保证时钟频率，以便从机识别
+  17   1                      if(!SDA) return 0;//SDA线为低电平则总线忙,退出
+  18   1                      SDA=0;   //SCL处于高电平的时候，SDA拉低
+  19   1                      delay_1us(1);
+  20   1                if(SDA) return 0;//SDA线为高电平则总线出错,退出
+  21   1                      SCL=0;
+  22   1                delay_1us(1);
+  23   1                return 1;
+  24   1      }
+  25          //**************************************
+  26          //IIC停止信号
+  27          /*
+  28          IIC停止:当SCL处于高电平期间，SDA由低电平变成高电平出现一个上升沿
+  29          */
+  30          //**************************************
+  31          void I2C_Stop(void)
+  32          {
+  33   1          SDA=0;
+  34   1              SCL=0;
+  35   1              delay_1us(1);
+  36   1              SCL=1;
+  37   1              delay_1us(1);
+  38   1              SDA=1;//当SCL处于高电平期间，SDA由低电平变成高电平             //延时
+  39   1      }
+  40          //**************************************
+  41          //IIC发送应答信号
+  42          //入口参数:ack (0:ACK 1:NAK)
+  43          /*
+  44          应答：当从机接收到数据后，向主机发送一个低电平信号
+  45          先准备好SDA电平状态，在SCL高电平时，主机采样SDA
+  46          */
+  47          //**************************************
+  48          void I2C_SendACK(u8 i)
+  49          {
+  50   1          if(1==i)
+  51   1                SDA=1;                     //准备好SDA电平状态，不应答
+  52   1          else 
+  53   1                SDA=0;                                                //准备好SDA电平状态，应答       
+C51 COMPILER V8.02   IIC                                                                   12/06/2017 10:10:14 PAGE 2   
+
+  54   1                SCL=1;                    //拉高时钟线
+  55   1          delay_1us(1);                 //延时
+  56   1          SCL=0;                  //拉低时钟线
+  57   1          delay_1us(1);    
+  58   1      } 
+  59          ///////等待从机应答////////
+  60          /*
+  61          当本机(主机)发送了一个数据后，等待从机应答
+  62          先释放SDA，让从机使用，然后采集SDA状态
+  63          */
+  64          /////////////////
+  65          u8 I2C_WaitAck(void)     //返回为:=1有ACK,=0无ACK
+  66          {
+  67   1              u8 i=0;
+  68   1              SDA=1;          //释放SDA
+  69   1              SCL=1;         //SCL拉高进行采样
+  70   1              while(SDA)//等待SDA拉低
+  71   1              {
+  72   2                      i++;      //等待计数
+  73   2                      if(i==2)//超时跳出循环
+  74   2                      break;
+  75   2              }
+  76   1              if(SDA)//再次判断SDA是否拉低
+  77   1              {
+  78   2                      SCL=0; 
+  79   2                      return 0;//从机应答失败，返回0
+  80   2              }
+  81   1          delay_1us(1);//延时保证时钟频率
+  82   1              SCL=0;
+  83   1              delay_1us(1); //延时保证时钟频率
+  84   1              return 1;//从机应答成功，返回1
+  85   1      }
+  86          //**************************************
+  87          //向IIC总线发送一个字节数据
+  88          /*
+  89          一个字节8bit,当SCL低电平时，准备好SDA，SCL高电平时，从机采样SDA
+  90          */
+  91          //**************************************
+  92          void I2C_SendByte(u8 dat)
+  93          {
+  94   1        u8 i;
+  95   1              SCL=0;//SCL拉低，给SDA准备
+  96   1        for (i=0; i<8; i++)         //8位计数器
+  97   1        {
+  98   2              if(dat&0x80)//SDA准备
+  99   2               SDA=1;  
+ 100   2              else 
+ 101   2               SDA=0;
+ 102   2          SCL=1;                //拉高时钟，给从机采样
+ 103   2          delay_1us(1);        //延时保持IIC时钟频率，也是给从机采样有充足时间
+ 104   2          SCL=0;                //拉低时钟，给SDA准备
+ 105   2          delay_1us(1);                 //延时保持IIC时钟频率
+ 106   2              dat <<= 1;          //移出数据的最高位  
+ 107   2        }                                      
+ 108   1      }
+ 109          //**************************************
+ 110          //从IIC总线接收一个字节数据
+ 111          //**************************************
+ 112          u8 I2C_RecvByte()
+ 113          {
+ 114   1          u8 i;
+ 115   1          u8 dat = 0;
+C51 COMPILER V8.02   IIC                                                                   12/06/2017 10:10:14 PAGE 3   
+
+ 116   1          SDA=1;//释放SDA，给从机使用
+ 117   1          delay_1us(1);         //延时给从机准备SDA时间            
+ 118   1          for (i=0; i<8; i++)         //8位计数器
+ 119   1          { 
+ 120   2                      dat <<= 1;
+ 121   2                              
+ 122   2              SCL=1;                //拉高时钟线，采样从机SDA
+ 123   2           
+ 124   2                        if(SDA) //读数据    
+ 125   2                         dat |=0x01;      
+ 126   2             delay_1us(1);     //延时保持IIC时钟频率          
+ 127   2             SCL=0;           //拉低时钟线，处理接收到的数据
+ 128   2             delay_1us(1);   //延时给从机准备SDA时间
+ 129   2          } 
+ 130   1          return dat;
+ 131   1      }
+ 132          //**************************************
+ 133          //向IIC设备写入一个字节数据
+ 134          //**************************************
+ 135          u8 Single_WriteI2C_byte(u8 Slave_Address,u8 REG_Address,u8 datas)
+ 136          {
+ 137   1                if(I2C_Start()==0)  //起始信号
+ 138   1                      {I2C_Stop(); return 0;}           
+ 139   1      
+ 140   1          I2C_SendByte(Slave_Address);   //发送设备地址+写信号
+ 141   1                if(!I2C_WaitAck()){I2C_Stop(); return 0;}
+ 142   1         
+ 143   1                      I2C_SendByte(REG_Address);    //内部寄存器地址，
+ 144   1                if(!I2C_WaitAck()){I2C_Stop(); return 0;}
+ 145   1         
+ 146   1                      I2C_SendByte(datas);       //内部寄存器数据，
+ 147   1                if(!I2C_WaitAck()){I2C_Stop(); return 0;}
+ 148   1                      
+ 149   1                      I2C_Stop();   //发送停止信号
+ 150   1                      
+ 151   1                      return 1;
+ 152   1      }
+ 153          //**************************************
+ 154          //从IIC设备读取一个字节数据
+ 155          //**************************************
+ 156          u8 Single_ReadI2C(u8 Slave_Address,u8 REG_Address,u8 *REG_data,u8 length)
+ 157          {
+ 158   1       if(I2C_Start()==0)  //起始信号
+ 159   1              {I2C_Stop(); return 0;}          
+ 160   1               
+ 161   1              I2C_SendByte(Slave_Address);    //发送设备地址+写信号
+ 162   1              if(!I2C_WaitAck()){I2C_Stop(); return 0;} 
+ 163   1              
+ 164   1              I2C_SendByte(REG_Address);     //发送存储单元地址
+ 165   1              if(!I2C_WaitAck()){I2C_Stop(); return 0;} 
+ 166   1              
+ 167   1              if(I2C_Start()==0)  //起始信号
+ 168   1                              {I2C_Stop(); return 0;}            
+ 169   1      
+ 170   1              I2C_SendByte(Slave_Address+1);  //发送设备地址+读信号
+ 171   1              if(!I2C_WaitAck()){I2C_Stop(); return 0;}
+ 172   1              
+ 173   1              while(length-1)
+ 174   1              {
+ 175   2                      *REG_data++=I2C_RecvByte();       //读出寄存器数据
+ 176   2                      I2C_SendACK(0);               //应答
+ 177   2                      length--;
+C51 COMPILER V8.02   IIC                                                                   12/06/2017 10:10:14 PAGE 4   
+
+ 178   2              }
+ 179   1              *REG_data=I2C_RecvByte();  
+ 180   1              I2C_SendACK(1);     //发送停止传输信号
+ 181   1              I2C_Stop();                    //停止信号
+ 182   1              return 1;
+ 183   1      }
+ 184          u8 takeRangeReading(u8 Slave_Address){
+ 185   1              delay_1us(40); 
+ 186   1        if(I2C_Start()==0)  //起始信号
+ 187   1                      {I2C_Stop(); return 0;}           
+ 188   1      
+ 189   1          I2C_SendByte(Slave_Address);   //发送设备地址+写信号
+ 190   1                if(!I2C_WaitAck()){I2C_Stop(); return 0;}
+ 191   1          delay_1us(40);  
+ 192   1                      I2C_SendByte(0x51);    //内部寄存器地址，
+ 193   1                if(!I2C_WaitAck()){I2C_Stop(); return 0;}
+ 194   1         
+ 195   1                      
+ 196   1                      I2C_Stop();     
+ 197   1                      return 1;
+ 198   1      }
+ 199          u8 requestRange(u8 Slave_Address,uint16_t *distance){
+ 200   1              u8 REG_data[2]={0,0};
+ 201   1              
+ 202   1       
+ 203   1      if(I2C_Start()==0)  //起始信号
+ 204   1                      {I2C_Stop(); return 0;}          
+ 205   1               
+ 206   1              I2C_SendByte(Slave_Address);    //发送设备地址+写信号
+ 207   1              if(!I2C_WaitAck()){I2C_Stop(); return 0;} 
+ 208   1              delay_1us(50);  
+ 209   1      
+ 210   1      
+ 211   1              REG_data[0]=I2C_RecvByte();       //读出寄存器数据
+ 212   1      
+ 213   1              I2C_SendACK(0);               //应答
+ 214   1      
+ 215   1              REG_data[1]=I2C_RecvByte();       //读出寄存器数据
+ 216   1              
+ 217   1              I2C_SendACK(1);     //发送停止传输信号
+ 218   1              
+ 219   1              I2C_Stop();                    //停止信号
+ 220   1              distance[0]=REG_data[0]<<8|REG_data[1];
+ 221   1              return 1;
+ 222   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    530    ----
+   CONSTANT SIZE    =      2    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----      13
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  1 WARNING(S),  0 ERROR(S)

@@ -9,9 +9,10 @@
 │   │   ├── x86
 │   │   ├── 使用说明.txt
 │   │   └── 其他版本驱动下载地址.txt
-│   ├── 串口模块使用说明.pdf
-│   └── 串口调试软件
+│   ├── 串口调试软件
+│   └── 串口模块使用说明.pdf
 ├── DT7+DR16 遥控套装
+│   ├── RC_System_Installer_v1.2.dmg
 │   └── RM DT7-DR16 遥控器控制协议V1.4.pdf
 ├── External MPU9250
 │   ├── IMG_A6DBCEC45C97-1.jpeg
@@ -33,9 +34,9 @@
 ├── M3508+C620 及附件包
 │   ├── M3508直流无刷减速电机保养手册.pdf
 │   ├── RM C620无刷电机调速器使用说明V1.01.pdf
-│   ├── RoboMaster M3508直流无刷减速电机使用说明V1.0（中英日）.pdf
+│   ├── RoboMaster M3508附件包使用说明V1.0（中英日）.pdf
 │   ├── RoboMaster M3508直流无刷减速电机混控教程V1.0.pdf
-│   └── RoboMaster M3508附件包使用说明V1.0（中英日）.pdf
+│   └── RoboMaster M3508直流无刷减速电机使用说明V1.0（中英日）.pdf
 ├── MPU6500+IST8310
 │   ├── IST8303 Datasheet.pdf
 │   ├── MPU-6500-Datasheet.pdf
@@ -58,27 +59,25 @@
 │   ├── RoboMaster开发板焊接修改.pdf
 │   └── RoboMaster开发版用户手册.pdf
 ├── RM 2019 规则与规范
-│   ├── 17mm充能装置检录标准
-│   │   └── 17mm荧光弹丸充能装置检录说明V1.0.pdf
-│   ├── RM2019 参赛队伍招商权益审核模板.xlsx
+│   ├── RM2019 项管管理方案V2.0.pdf
 │   ├── RM2019 参赛队招商手册.pdf
 │   ├── RM2019 视觉元素工具手册-基础版v1.1.pdf
-│   ├── RM2019 项管管理方案V2.0.pdf
+│   ├── RM2019 参赛队伍招商权益审核模板.xlsx
 │   ├── RM2019参赛队入住须知V2.0.pdf
-│   ├── RoboMaster 2019机甲大师单项赛比赛规则手册V2.0（20190708）.pdf
-│   ├── RoboMaster 2019机甲大师国际预选赛参赛手册V2.0.pdf
 │   ├── RoboMaster 2019机甲大师赛比赛规则手册 V2.0 20190621.pdf
+│   ├── RoboMaster 2019机甲大师国际预选赛参赛手册V2.0.pdf
+│   ├── RoboMaster 2019机甲大师单项赛比赛规则手册V2.0（20190708）.pdf
 │   ├── RoboMaster2019机甲大师赛比赛规则手册V2.0修订声明（20190703）.pdf
-│   ├── 充能装置使用说明&FAQ.pdf
 │   ├── 关于 RoboMaster 2019 机甲大师复活赛、 国际预选赛、总决赛及单项赛总决赛弹丸使用说明.pdf
 │   ├── 关于RoboMaster 2019机甲大师复活赛、国际预选赛及总决赛比赛现场随机抽查作弊行为的通知.pdf
-│   └── 旧版规则
-│       ├── RM2018机甲大师赛比赛规则手册 V1.2.pdf
-│       ├── RoboMaster 2019机甲大师赛比赛规则手册V1.2 2019.04.19.pdf
-│       ├── RoboMaster2017场地说明V2.0修订版.pdf
-│       ├── RoboMaster2017比赛规则手册V1.9.pdf
-│       ├── RoboMaster2018机甲大师国际预选赛参赛手册.pdf
-│       └── RoboMaster2018机甲大师赛裁判系统规范手册V1.1.pdf
+│   ├── 旧版规则
+│   │   ├── RM2018机甲大师赛比赛规则手册 V1.2.pdf
+│   │   ├── RoboMaster 2019机甲大师赛比赛规则手册V1.2 2019.04.19.pdf
+│   │   ├── RoboMaster2017场地说明V2.0修订版.pdf
+│   │   ├── RoboMaster2017比赛规则手册V1.9.pdf
+│   │   ├── RoboMaster2018机甲大师国际预选赛参赛手册.pdf
+│   │   └── RoboMaster2018机甲大师赛裁判系统规范手册V1.1.pdf
+│   └── 充能装置使用说明&FAQ.pdf
 ├── RM 裁判系统及规范
 │   ├── 2017版
 │   │   ├── DJI_WIN_Driver_Installer.7z
@@ -93,20 +92,15 @@
 │   │   ├── Robomasters_Server.rar
 │   │   └── 文件说明.txt
 │   ├── 2018版
-│   │   └── RM2018 机甲大师裁判系统规范手册V1.4（2018.4.17）.pdf
+│   │   ├── RM2018 机甲大师裁判系统规范手册V1.4（2018.4.17）.pdf
+│   │   └── 相机图传模块VT01说明书V1.0.pdf
+│   ├── 2019 版
+│   │   └── RM2019裁判系统用户手册V1.0.pdf
 │   ├── 2019裁判系统FAQ_v1.6.pdf
-│   ├── RM2019AM02及AM12说明书V1.0.pdf
-│   ├── RM2019主控模块MC02说明书V1.0.pdf
-│   ├── RM2019场地交互模块FI01说明书V1.0.pdf
-│   ├── RM2019测速模块SM01及SM11说明书V1.0.pdf
-│   ├── RM2019灯条模块LI01说明书V1.0.pdf
-│   ├── RM2019电源管理模块PM01说明书V1.0.pdf
-│   ├── RM2019相机图传模块VT01说明书V1.0.pdf
-│   ├── RM2019裁判系统用户手册V1.0.pdf
 │   ├── RM2019规范手册V1.1.pdf
 │   ├── RM模拟器使用指南.pdf
-│   ├── RoboMaster 2019 客户端（总决赛版本）界面说明.pdf
 │   ├── RoboMaster 2019 裁判系统服务器(总决赛版本)界面说明V1.0.pdf
+│   ├── RoboMaster 2019 客户端（总决赛版本）界面说明.pdf
 │   ├── RoboMaster Tool 2 V5.0.0.3
 │   │   ├── Config
 │   │   │   ├── RobotModuleConfig.csv
@@ -128,13 +122,20 @@
 │   │   ├── RJCP.SerialPortStream.pdb
 │   │   ├── RoboMaster Tool 2.exe.config
 │   │   └── RoboMaster Tool 2.pdb
-│   ├── RoboMaster 图传模块 VT02&12 2019使用说明书.pdf
 │   ├── RoboMaster定位系统使用说明
 │   │   ├── RoboMaster 基站模块使用说明 发布版.pdf
 │   │   ├── RoboMaster 标签模块使用说明-发布版.pdf
 │   │   └── Robomaster UWB 定位系统使用说明 （发布版V1.0）.pdf
 │   ├── 更新历史
 │   │   └── RM2019串口协议 V1.1.pdf
+│   ├── 装甲模块 AM02及AM12说明书V1.0.pdf
+│   ├── 图传模块 VT02&12 2019使用说明书.pdf
+│   ├── 灯条模块LI01说明书V1.0.pdf
+│   ├── 主控模块MC02说明书V1.0.pdf
+│   ├── 测速模块SM01及SM11说明书V1.0.pdf
+│   ├── 场地交互模块FI01说明书V1.0.pdf
+│   ├── 电源管理模块PM01说明书V1.0.pdf
+│   ├── 裁判系统用户手册 V1.2.pdf
 │   └── 裁判系统串口协议附录 V2.0.pdf
 ├── RM6623
 │   ├── RM 6623 云台电机电调.pdf
@@ -156,10 +157,10 @@
 │   │   ├── 10x和30x驱动器 最新固件升级包
 │   │   ├── 20x驱动器 最新固件升级包
 │   │   ├── 40x驱动器 最新固件升级包
-│   │   ├── 字体安装包，如显示异常请安装
 │   │   ├── 最新_NET框架安装包，必须提前安装
 │   │   │   └── 说明.txt
-│   │   └── 驱动器调试软件
+│   │   ├── 驱动器调试软件
+│   │   └── 字体安装包，如显示异常请安装
 │   ├── 10-RoboModule-RMDS系列驱动器-CAN总线连线示意图.pdf
 │   ├── 108-RoboModule-RMDS系列驱动器-接口硬件参考for RMDS-108.pdf
 │   ├── 11-RoboModule-RMDS系列驱动器-CAN总线通信协议说明.pdf
@@ -185,6 +186,123 @@
 │   ├── STM32入门简易教程.pdf
 │   ├── STM32入门篇之通用定时器彻底研究.doc
 │   └── stm32f427vg.pdf
+├── YX67204-红外激光测距模块GY56-190515
+│   ├── C51
+│   │   ├── c51_iic
+│   │   │   ├── Peripherals
+│   │   │   │   ├── inc
+│   │   │   │   └── src
+│   │   │   ├── lis
+│   │   │   │   └── c51_iic.m51
+│   │   │   ├── output
+│   │   │   │   ├── c51_iic
+│   │   │   │   ├── c51_iic.plg
+│   │   │   │   ├── iic.obj
+│   │   │   │   ├── main.obj
+│   │   │   │   ├── stc_it.obj
+│   │   │   │   └── usart.obj
+│   │   │   └── user
+│   │   │       ├── c51_iic.Opt
+│   │   │       ├── c51_iic.Uv2
+│   │   │       ├── c51_iic.plg
+│   │   │       ├── c51_iic_Opt.Bak
+│   │   │       └── c51_iic_Uv2.Bak
+│   │   └── c51_usart
+│   │       ├── Peripherals
+│   │       │   ├── inc
+│   │       │   └── src
+│   │       ├── lis
+│   │       │   └── c51_usart.m51
+│   │       ├── output
+│   │       │   ├── c51_usart
+│   │       │   ├── c51_usart.plg
+│   │       │   ├── main.obj
+│   │       │   ├── stc_it.obj
+│   │       │   └── usart.obj
+│   │       └── user
+│   │           ├── c51_usart.Opt
+│   │           ├── c51_usart.Uv2
+│   │           ├── c51_usart.plg
+│   │           ├── c51_usart_Opt.Bak
+│   │           └── c51_usart_Uv2.Bak
+│   ├── GY-56使用说明.pdf
+│   ├── PC
+│   ├── STM32
+│   │   ├── STM32_IIC
+│   │   │   ├── GYXX
+│   │   │   │   ├── inc
+│   │   │   │   └── src
+│   │   │   ├── Libraries
+│   │   │   │   ├── CMSIS
+│   │   │   │   │   ├── CM3
+│   │   │   │   │   │   ├── CoreSupport
+│   │   │   │   │   │   └── DeviceSupport
+│   │   │   │   │   │       └── ST
+│   │   │   │   │   │           └── STM32F10x
+│   │   │   │   │   │               ├── Release_Notes.html
+│   │   │   │   │   │               └── startup
+│   │   │   │   │   │                   ├── TrueSTUDIO
+│   │   │   │   │   │                   ├── arm
+│   │   │   │   │   │                   ├── gcc_ride7
+│   │   │   │   │   │                   └── iar
+│   │   │   │   │   ├── Documentation
+│   │   │   │   │   └── License.doc
+│   │   │   │   └── STM32F10x_StdPeriph_Driver
+│   │   │   │       ├── Release_Notes.html
+│   │   │   │       ├── inc
+│   │   │   │       └── src
+│   │   │   ├── Listing
+│   │   │   ├── Output
+│   │   │   │   └── ExtDll.iex
+│   │   │   ├── Peripherals
+│   │   │   │   ├── inc
+│   │   │   │   └── src
+│   │   │   └── user
+│   │   │       ├── DebugConfig
+│   │   │       │   └── GYXX_IIC_STM32F103C8.dbgconf
+│   │   │       ├── GYXX_IIC.uvoptx
+│   │   │       ├── GYXX_IIC.uvprojx
+│   │   │       └── JLinkLog.txt
+│   │   └── STM32_USART
+│   │       ├── GYXX
+│   │       │   ├── inc
+│   │       │   └── src
+│   │       ├── Libraries
+│   │       │   ├── CMSIS
+│   │       │   │   ├── CM3
+│   │       │   │   │   ├── CoreSupport
+│   │       │   │   │   └── DeviceSupport
+│   │       │   │   │       └── ST
+│   │       │   │   │           └── STM32F10x
+│   │       │   │   │               ├── Release_Notes.html
+│   │       │   │   │               └── startup
+│   │       │   │   │                   ├── TrueSTUDIO
+│   │       │   │   │                   ├── arm
+│   │       │   │   │                   ├── gcc_ride7
+│   │       │   │   │                   └── iar
+│   │       │   │   ├── Documentation
+│   │       │   │   └── License.doc
+│   │       │   └── STM32F10x_StdPeriph_Driver
+│   │       │       ├── Release_Notes.html
+│   │       │       ├── inc
+│   │       │       └── src
+│   │       ├── Listing
+│   │       ├── Output
+│   │       │   └── ExtDll.iex
+│   │       ├── Peripherals
+│   │       │   ├── inc
+│   │       │   └── src
+│   │       └── user
+│   │           ├── DebugConfig
+│   │           │   └── STM32_USART_STM32F103C8.dbgconf
+│   │           ├── JLinkLog.txt
+│   │           ├── STM32_USART.uvoptx
+│   │           └── STM32_USART.uvprojx
+│   └── arduino
+│       ├── GY_56_iic
+│       │   └── GY_56_iic.ino
+│       └── arduino_usart
+│           └── arduino_usart.ino
 ├── generate_readme.sh
 ├── readme.txt
 ├── 工具链
@@ -195,6 +313,15 @@
 ├── 摩擦轮与电调
 │   ├── 2312 摩擦轮电机.pdf
 │   └── 好盈电调.JPG
+├── 紫外灯充能装置
+│   ├── 17mm充能装置检录标准
+│   │   └── 17mm荧光弹丸充能装置检录说明V1.0.pdf
+│   └── 充能灯板PCB打板开源资料（可直接打板）
+│       ├── PCB图纸文件
+│       │   ├── reademe.txt
+│       │   └── 铝基板.PcbDoc
+│       └── 灯珠购买及铝基板打样指南
+│           └── 指南.pdf
 └── 法拉电容恒功率控制板使用说明.pdf
 
-56 directories, 141 files
+136 directories, 188 files

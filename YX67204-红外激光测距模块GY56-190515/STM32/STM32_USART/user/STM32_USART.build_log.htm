@@ -1,0 +1,43 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+F:\ARM\GYXX\GY262\STM32_USART\user\STM32_USART.uvproj
+Project File Date:  05/29/2015
+
+<h2>Output:</h2>
+Build target 'STM32_USART'
+compiling core_cm3.c...
+compiling system_stm32f10x.c...
+assembling startup_stm32f10x_md.s...
+compiling stm32f10x_rcc.c...
+..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c(23): error:  #5: cannot open source input file "stm32f10x_rcc.h": No such file or directory
+  #include "stm32f10x_rcc.h"
+..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c: 0 warnings, 1 error
+compiling stm32f10x_usart.c...
+..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c(23): error:  #5: cannot open source input file "stm32f10x_usart.h": No such file or directory
+  #include "stm32f10x_usart.h"
+..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c: 0 warnings, 1 error
+compiling stm32f10x_gpio.c...
+..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c(23): error:  #5: cannot open source input file "stm32f10x_gpio.h": No such file or directory
+  #include "stm32f10x_gpio.h"
+..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c: 0 warnings, 1 error
+compiling misc.c...
+..\Libraries\STM32F10x_StdPeriph_Driver\src\misc.c(24): error:  #5: cannot open source input file "misc.h": No such file or directory
+  #include "misc.h"
+..\Libraries\STM32F10x_StdPeriph_Driver\src\misc.c: 0 warnings, 1 error
+compiling usart.c...
+..\Peripherals\src\usart.c(1): error:  #5: cannot open source input file "usart.h": No such file or directory
+  #include "usart.h"
+..\Peripherals\src\usart.c: 0 warnings, 1 error
+compiling delay.c...
+..\Peripherals\src\delay.c(1): error:  #5: cannot open source input file "delay.h": No such file or directory
+  #include "delay.h"
+..\Peripherals\src\delay.c: 0 warnings, 1 error
+compiling main.c...
+main.c(2): error:  #5: cannot open source input file "delay.h": No such file or directory
+  #include "delay.h"
+main.c: 0 warnings, 1 error
+"..\Output\STM32_USART.axf" - 7 Error(s), 0 Warning(s).
+Target not created
