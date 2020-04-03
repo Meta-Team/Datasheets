@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <firmware_info name="powerboard">
+    <version version="5.0.1.2">
+      <name name="FW_PM01_5.0.1.2.encx"/>
+      <path path="https://rm-static.djicdn.com/documents/17348/a1c133fb6b8751556545133343106829.encx"/>
+      <description description="电源管理模块"/>
+      <date date="2019-04-29"/>
+    </version>
+  </firmware_info>
+  <firmware_info name="mainboard">
+    <version version="5.0.1.10">
+      <name name="FW_MC02_5.0.1.10.encx"/>
+      <path path="https://rm-static.djicdn.com/documents/17348/da1d541418d831557493354089782281.encx"/>
+      <description description="主控模块"/>
+      <date date="2019-05-10"/>
+    </version>
+  </firmware_info>
+  <firmware_info name="strike">
+    <version version="5.0.1.8">
+      <name name="FW_AM02_5.0.1.8.encx"/>
+      <path path="https://rm-static.djicdn.com/documents/17348/741ea5e47c7381557493373548667487.encx"/>
+      <description description="装甲"/>
+      <date date="2019-05-10"/>
+    </version>
+  </firmware_info>
+  <firmware_info name="RFID">
+    <version version="5.0.0.14">
+      <name name="FW_FI02_5.0.0.14.encx"/>
+      <path path="https://rm-static.djicdn.com/documents/17348/91cd6cfaeabff1553843962564988421.encx"/>
+      <description description="RFID"/>
+      <date date="2019-03-29"/>
+    </version>
+  </firmware_info>
+  <firmware_info name="speedDetect">
+    <version version="5.0.1.1">
+      <name name="FW_SM01_5.0.1.1.encx"/>
+      <path path="https://rm-static.djicdn.com/documents/17348/40da9a35c92ea1556457901429768195.encx"/>
+      <description description="测速模块"/>
+      <date date="2019-04-28"/>
+    </version>
+  </firmware_info>
+  <firmware_info name="bloodbar">
+    <version version="5.0.1.1">
+      <name name="FW_LB01_5.0.1.1.encx"/>
+      <path path="https://rm-static.djicdn.com/documents/17348/4e2b68b1a2b3f1557493424711107784.encx"/>
+      <description description="灯条模块"/>
+      <date date="2019-05-10"/>
+    </version>
+  </firmware_info>
+  <firmware_info name="uwb">
+    <version version="5.0.0.11">
+      <name name="UWB_uC5.0.0.11.encx"/>
+      <path path="https://rm-static.djicdn.com/documents/17348/be74faeac57e81557496182581154999.encx"/>
+      <description description="定位模块"/>
+      <date date="2019-05-10"/>
+    </version>
+  </firmware_info>
+</root>
