@@ -1,6 +1,7 @@
 .
 ├── 130度广角无畸变3.0mm焦距.jpg
 ├── A4988 步进电机 电调.pdf
+├── Accelerated_GStreamer_User_Guide.pdf
 ├── CP2102 串口转USB模块
 │   ├── CP2102驱动（Mac）.dmg
 │   ├── CP2102驱动（Win）
@@ -25,9 +26,15 @@
 ├── HC05 蓝牙模块
 │   ├── BlueTooth.pdf
 │   └── HC05指令集.pdf
-├── Jetson Nano
+├── Jetson
 │   ├── JetsonTX1_TX2_Developer_Kit_Carrier_Board_Specification1.pdf
+│   ├── Jetson_Nano_Carrier_Board_Reference_Design_Schematics
+│   │   ├── Jetson_Nano_Carrier_Board_Concept_Schematics.pdf
+│   │   ├── Jetson_Nano_Carrier_Board_Concept_Schematics_Design_Files.zip
+│   │   ├── Jetson_Nano_Carrier_Board_OrCAD_Schematics.pdf
+│   │   └── Jetson_Nano_Carrier_Board_OrCAD_Schematics_Design_Files.zip
 │   ├── Jetson_Nano_Module_Pinmux_Config_Template.xlsm
+│   ├── Jetson_Nano_Product_Design_Guide_DG-09502-001_v2.2.pdf
 │   └── NVIDIA_JetsonNano_DataSheet_v0.7.pdf
 ├── M2006+C610
 │   ├── RM C610 无刷电机 电调.pdf
@@ -330,4 +337,4 @@
 │           └── 指南.pdf
 └── 法拉电容恒功率控制板使用说明.pdf
 
-138 directories, 192 files
+139 directories, 198 files
